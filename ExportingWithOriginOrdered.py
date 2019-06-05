@@ -1,12 +1,19 @@
 import rhinoscriptsyntax as  rs
 import Rhino as rh
 from System.Drawing import Color
+'''
+What it does is exporting drawings uniformly arranged on the plan to each .dwg file
+'''
 
-
+#This part defines start position of drawings
 X_ST = 0
 Y_ST = 0
+
+#Change the girdsize based on your project
 X_Step = 9000
 Y_Step = 10000
+
+#Define the prefix of each file
 Sail_Name = rs.GetString("Input Sail Number")
 x = rs.GetInteger("Number of Drawings in X direction")
 y = rs.GetInteger("Number of Drawings in Y direction")
@@ -34,12 +41,15 @@ for j in range(y):
         y2 = y_cnt + 4900
         k = str(int(i +1)).zfill(2)
         l = str(int(j +1)).zfill(2)
+        #Define path
         path = direct + "/" + Sail_Name + "-" + l + k + ".dwg"
         rs.WindowPick((x1,y1,0), (x2,y2,0),  "Top", True)
         org = '{},{},0'.format(x_cnt,y_cnt)
+        #Here exportwithorigin command was used
         CommandLine = '_-ExportWithOrigin {} "{}" _Enter'.format(org,path)
         rs.Command(CommandLine)
-        rs.Command("_Hide")
+        #Hide after exported so that above the duplicated selection.
+        rs.Command("_Hide")        
 rs.Command("_Show")
 
 #Reset color to black
