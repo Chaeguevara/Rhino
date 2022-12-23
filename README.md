@@ -1,4 +1,3 @@
-# RhinoPython
-UploadSpace for something about rhinoPython
+# Rhino Project
 
-This repo is for uploading rhino python script found something interesting or useful after implementing in some projects.
+Rhino + Grasshopper 관련 내용을 올릴예정

@@ -1,0 +1,5 @@
+PWD /Users/heejinchae/Documents/github/Rhino/LectureNote
+INPUT /opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/web2c/texmf.cnf
+INPUT /opt/homebrew/Cellar/texlive/20220321_3/share/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/heejinchae/Documents/github/Rhino/LectureNote/test2.tex
+OUTPUT test2.log
