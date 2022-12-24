@@ -9,10 +9,10 @@
 \gdef \the@ipfilectr {@-5}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
-\contentsline {part}{Part\ I\hspace {\betweenumberspace }강의 목표 및 교수자 소개}{1}{part.1}%
+\contentsline {part}{Part\ I\hspace {\betweenumberspace }지오메트리(Geometry)}{1}{part.1}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
-\contentsline {chapter}{\numberline {1}ㅁ무ㅓ}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {1}지오메트리}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Section Heading}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Section Heading}{3}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Subsection Heading}{4}{subsection.1.2.1}%
@@ -39,7 +39,7 @@
 \contentsline {subsubsection}{\numberline {A.1.1.1}Subsubsection Heading}{13}{subsubsection.A.1.1.1}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
-\contentsline {chapter}{\numberline {B}ㅁ무ㅓ}{15}{appendix.B}%
+\contentsline {chapter}{\numberline {B}ㅇㅇㅇㅇ}{15}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Section Heading}{15}{section.B.1}%
 \contentsline {section}{\numberline {B.2}Section Heading}{15}{section.B.2}%
 \contentsline {subsection}{\numberline {B.2.1}Subsection Heading}{16}{subsection.B.2.1}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2022.9.2)  24 DEC 2022 01:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2022.9.2)  24 DEC 2022 23:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1021,7 +1021,22 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 
 
 
-]) [9]
+]
+LaTeX Font Info:    Trying to load font information for OT1+ntxsups on input line 11.
+ (/opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/tex/latex/newtx/ot1ntxsups.fd
+File: ot1ntxsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 11.
+LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
+(Font)              scaled to size 8.5pt on input line 11.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 13.
+LaTeX Font Info:    Font shape `LUC/nanummj/b/n' in size <10> not available
+(Font)              Font shape `LUC/nanummj/bx/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `LUC/nanummj/m/it' in size <10> not available
+(Font)              Font shape `LUC/nanummj/m/sl' tried instead on input line 24.
+) [9]
 \openout2 = `author/acknowledgement.aux'.
 
  (./author/acknowledgement.tex [10
@@ -1037,17 +1052,13 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 
 
 ] (./book.toc
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 12.
-LaTeX Font Info:    Font shape `LUC/nanummj/b/n' in size <10> not available
-(Font)              Font shape `LUC/nanummj/bx/n' tried instead on input line 12.
-LaTeX Font Info:    Trying to load font information for LUC+uhcmj on input line 15.
+LaTeX Font Info:    Trying to load font information for LUC+uhcmj on input line 42.
  (/opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
 File: lucuhcmj.fd 2013/09/26 UHC Myeongjo font definitions
 )
 
 LaTeX Font Warning: Font shape `LUC/uhcmj/b/n' undefined
-(Font)              using `LUC/uhcmj/m/n' instead on input line 15.
+(Font)              using `LUC/uhcmj/m/n' instead on input line 42.
 
 )
 \tf@toc=\write5
@@ -1089,22 +1100,13 @@ LaTeX Font Info:    Font shape `LUC/nanummj/b/n' in size <18> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.10 \part{강의 목표 및 교수자 소개}
-                                               [1
+l.10 \part{지오메트리(Geometry)}
+                                      [1
 
 
 
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+ntxsups on input line 11.
- (/opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/tex/latex/newtx/ot1ntxsups.fd
-File: ot1ntxsups.fd 2015/01/17 v1.0
-)
-LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 11.
-LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
-(Font)              scaled to size 8.5pt on input line 11.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1150,7 +1152,7 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 11.0pt on input line 64.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
 (Font)              scaled to size 8.5pt on input line 74.
-<images//figure.pdf, id=177, 139.52126pt x 195.73125pt>
+<images//figure.pdf, id=208, 139.52126pt x 195.73125pt>
 File: images//figure.pdf Graphic file (type pdf)
 <use images//figure.pdf>
 Package pdftex.def Info: images//figure.pdf  used on input line 90.
@@ -1396,18 +1398,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18131 strings out of 478268
- 279197 string characters out of 5835367
- 575991 words of memory out of 5000000
- 35679 multiletter control sequences out of 15000+600000
- 581844 words of font info for 267 fonts, out of 8000000 for 9000
+ 18205 strings out of 478268
+ 280413 string characters out of 5835367
+ 575995 words of memory out of 5000000
+ 35720 multiletter control sequences out of 15000+600000
+ 593855 words of font info for 306 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,12n,76p,816b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}{/opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/enc/dvips/newtx/ntxsups_ot1.enc}</opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbac.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbad.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbba.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbb.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbc.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd4.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/ntxsups-Regular.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/txexs.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/uhc/umj/umj02.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on book.pdf (43 pages, 1559390 bytes).
+ 69i,12n,76p,843b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}{/opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/enc/dvips/newtx/ntxsups_ot1.enc}</opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbac.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbad.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb2.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb3.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb4.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb7.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb8.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb9.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbba.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbc.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbe.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc5.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc8.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc9.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbcc.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd2.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd3.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd6.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmaf.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc4.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/ntxsups-Regular.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/txexs.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/uhc/umj/umj02.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></opt/homebrew/Cellar/texlive/20220321_3/share/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on book.pdf (43 pages, 2594726 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 586 compressed objects within 6 object streams
+ 891 PDF objects out of 1000 (max. 8388607)
+ 678 compressed objects within 7 object streams
  140 named destinations out of 1000 (max. 500000)
  206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
