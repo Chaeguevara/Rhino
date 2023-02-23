@@ -18,6 +18,11 @@
     modifier={by-nc-sa},
     version={3.0},
 ]{doclicense}
+\hypersetup{
+pdftitle={Marina Bay Sands Tutorial},
+pdfsubject={Marina Bay Sands Panelization in Grasshopper},
+pdfauthor={Heejin Chae},
+pdfkeywords={BIM, Panelization}}
 
 \title{Marina Bay sands tutorial}
 \author{채희진}
@@ -165,6 +170,9 @@ Grasshopper의 입력값으로 사용될 예정인 값들은 \textit{MBS-Driver}
     \caption{본 글에서 사용하는 커브 방향}
     \label{fig:mbs_07_lang}
 \end{figure}
+\pagebreak
+
+
 \subsection{가장 긴 엣지 구하기}
 앞에서도 계속 언급한바와 같이, 모든 패널이 제작조건에 맞게 생성되야 합니다. 따라서 한 방향에서 가장 긴 엣지 또는 커브를 구한 후, 각 조각이 제작 조건 아래로 떨어지는 숫자로 나누면 제작 조건에 맞는 포인트들을 구할 수 있습니다.
  제작조건을 너비와 높이라 한다면(사실 둘을 교환해도 큰 문제는 없지만) 여기서는 행방향이 최대 제작 가능 너비보다 작도록 설정해보겠습니다. 
@@ -172,9 +180,71 @@ Grasshopper의 입력값으로 사용될 예정인 값들은 \textit{MBS-Driver}
 이 과정을 수행하기 위해서는 원본 지오메트리에서 가장 긴 엣지를 구하면 됩니다. 한눈에 보기에 행방향에 있는 엣지가 가장 긴것을 볼 수 있습니다. 파라메트릭 모델링을 할때는 아무리 눈으로 보인다해도, 손으로 클릭하는 것이 아닌 논리를 구성해서 작업을 해야합니다.
  왜냐하면 논리를 구성하는 과정인 알고리즘으로 하지 않고 손으로 하는 매뉴얼한 작업을 하게 되면 작업을 자동화 할 수 없습니다. 흔히 Robust한 알고리즘이라는 말을 많이 쓰는데, 패턴이 잘 깨지지 않는 그런 알고리즘을 구성해야 합니다.
 
-\subsubsection{지오메트리를 엣지로 변환}
-\subsubsection{Continuity를 이용해 가장 긴 엣지 추출}
+\subsubsection{서페이스를 엣지로 변환}
+앞에서 언급한바와 같이 가장 긴 엣지를 구해야 합니다. 먼저 서페이스의 엣지를 구해야합니다. 여러가지 방법이 있지만 서페이스인 지오메트리를 curve라고 하는 컴포넌트에 넣으면 엣지를 구할 수 있습니다. 
+curve 컴포넌트는 Grasshopper Tab 중 Params $>$ Geometry $>$ Curve 에서 찾을 수 있고(Figure \ref{fig:mbs_08_curveAtTab}), 캔버스에 더블클릭해서 ``curve''라고 검색하는게 더 빠르긴 합니다(Figure \ref{fig:mbs_08_curve}).
+그리고 ``crv''와 같이 몇개의 축약어 또는 약간의 오타도 허용하기 때문에 좀더 짧은 글씨로 빠르게 찾는것도 요령이라고 할 수 있습니다(Figure \ref{fig:mbs_08_crv}).
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=.6\textwidth]{./img/mbs_08_curvAtTab.png}
+        \caption{탭에서 해당 컴포넌트를 찾는 경우}
+        \label{fig:mbs_08_curveAtTab}
+    \end{subfigure}
+    \begin{subfigure}{0.35\textwidth}
+        \centering
+        \includegraphics[width=.7\textwidth]{./img/mbs_08_curve.png}
+        \caption{``curve''검색어를 찾는 경우}
+        \label{fig:mbs_08_curve}
+    \end{subfigure}
+    \begin{subfigure}{0.35\textwidth}
+        \centering
+        \includegraphics[width=.7\textwidth]{./img/mbs_08_crv.png}
+        \caption{``crv''검색어로 찾는 경우}
+        \label{fig:mbs_08_crv}
+    \end{subfigure}
+    \caption{``Curve''컴포넌트 탐색방법}
+    \label{fig:mbs_08_curveComp}
+\end{figure}
+
+위 curve 컴포넌트를 이용하게 되면 손쉽게 서페이스를 엣지로 변환할 수 있습니다(FIgure \ref{fig:mbs_09_edgeToSrfInComponent}). 이제 변환된 엣지 중 가장 긴 엣지를 구해보도록 합시다.
+\begin{figure}[H]
+    \centering
+   \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[width=.7\textwidth]{./img/mbs_09_srfToEdge.png}
+        \caption{Surface를 Curve로 바꾼 컴포넌트}
+        \label{fig:mbs_09_srfToEdge} 
+   \end{subfigure} 
+   \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[width=.7\textwidth]{./img/mbs_09_Edge.png}
+        \caption{Surface의 edge 추출 결과}
+        \label{fig:mbs_09_Edge} 
+   \end{subfigure} 
+   \caption{Surface Edge로 바꾼 스크립트}
+   \label{fig:mbs_09_edgeToSrfInComponent}
+\end{figure}
+
+
+
+\subsubsection{Continuity를 이용한 점 추출}
+모델링을 강의할 때 어려운 점 중 하나는 같은 결과를 얻기 위해 거쳐야하는 모델링 과정이 여러가지가 될 수 있다는 점입니다. 계속 같은말을 반복하는 것 같아
+ 여기에서 한번 정리한다면, 결과가 같다면 정답이란 없습니다. 다만, 강건하고(robust) 연산속도가 빠른 방법을 항상 채택하는 것이 좋은 알고리즘을 만드는 자세라고 생각합니다.
+ 그런 점에서 제것이 정답이다라고 할 순없지만 이어가도록 하겠습니다. 
+
+이제 엣지를 구했고, 우리가 눈으로 보기에 왠지 4개로 쪼갤 수 있을 것 같이 생겼습니다. 그렇다는 말은 이 가장자리가 4개의 선을 이어붙인 방식이라면, 선을 단순히 쪼개서(explode)를 해서 할 수도 있을 것입니다.
+ 하지만 여기선 continuity를 이용해서 4개의 엣지로 쪼개고, 이 중 가장 긴것을 선택해 보도록 하겠습니다.
+
+Continuity는 하나의 선에서 연결성을 고려해 점을 추출하는 방식입니다. 가령 두개의 선이 있다면 그냐 어떻게든 붙어있는지, 부드럽게 붙어있는지를 판별해 점을 고르게 됩니다.
+두개의 선이 꺾여서 붙어있는 등 연결성이 없는 경우를 ``Position(G0)''라고 하고, 부드러운 경우는 G1~G4까지 있습니다. 깊게 들어가면 복잡한데, G1은 각 점에서 Tagent값이 급격히 변하는 점을 찾는 방식입니다.
+G2부터는 Tagent의 변화 양상이(미분값) 부드럽게 변하는지 등을 판별하게 됩니다. 이 예제에서는 G1()을 통해 원하는 점들을 선택할 수 있습니다.
+\subsubsection{Shatter 기능을 이용한 Edge 추출}
+\subsubsection{Sort 기능을 이용해 가장 긴 edge 선택}
 \subsection{제작 조건에 맞는 길이로 자르기}
 \subsection{UV Curve 기능을 이용해서 엣지에 수직방향 커브 구하기}
+\section{패널화하기(Panelization)}
 
 \end{document}
