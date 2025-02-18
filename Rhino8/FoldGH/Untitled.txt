@@ -1,0 +1,3 @@
+The current document contains 6 objects, and does not depend on any plug-ins.
+
+This file should load without issue on all versions of Grasshopper running on Rhino 8.16 or higher.
